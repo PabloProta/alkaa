@@ -10,7 +10,8 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.core.view.WindowInsetsControllerCompat
-import com.escodro.alkaa.navigation.NavGraph
+import com.escodro.alkaa.navigation.AlkaaNavGraph
+import com.escodro.alkaa.presentation.home.AlkaaApp
 import com.escodro.alkaa.presentation.model.AppThemeOptions
 import com.escodro.designsystem.AlkaaTheme
 import org.koin.androidx.viewmodel.ext.android.getViewModel
@@ -28,7 +29,7 @@ internal class MainActivity : ComponentActivity() {
             updateTheme(isDarkTheme)
 
             AlkaaTheme(isDarkTheme = isDarkTheme) {
-                NavGraph()
+                AlkaaApp()
             }
         }
     }

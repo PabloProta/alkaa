@@ -64,7 +64,7 @@ import kotlin.math.roundToInt
  */
 @Composable
 fun CategoryListSection(
-    modifier: Modifier,
+    modifier: Modifier = Modifier,
     onShowBottomSheet: (Long?) -> Unit
 ) {
     CategoryListLoader(

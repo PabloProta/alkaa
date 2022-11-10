@@ -12,7 +12,7 @@ import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performTextInput
 import androidx.test.platform.app.InstrumentationRegistry
-import com.escodro.alkaa.navigation.NavGraph
+import com.escodro.alkaa.navigation.AlkaaNavGraph
 import com.escodro.designsystem.AlkaaTheme
 import com.escodro.local.model.Category
 import com.escodro.local.provider.DaoProvider
@@ -57,7 +57,7 @@ internal class TaskListFlowTest : KoinTest {
         }
         composeTestRule.setContent {
             AlkaaTheme {
-                NavGraph()
+                AlkaaNavGraph()
             }
         }
     }

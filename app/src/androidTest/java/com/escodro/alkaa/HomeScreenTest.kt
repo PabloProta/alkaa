@@ -5,8 +5,8 @@ import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.test.platform.app.InstrumentationRegistry
-import com.escodro.alkaa.model.HomeSection
-import com.escodro.alkaa.navigation.NavGraph
+import com.escodro.alkaa.model.AlkaaTopDestination
+import com.escodro.alkaa.navigation.AlkaaNavGraph
 import com.escodro.designsystem.AlkaaTheme
 import com.escodro.test.DisableAnimationsRule
 import org.junit.Before
@@ -27,14 +27,14 @@ internal class HomeScreenTest {
     fun setup() {
         composeTestRule.setContent {
             AlkaaTheme {
-                NavGraph()
+                AlkaaNavGraph()
             }
         }
     }
 
     @Test
     fun test_titleChangesWhenBottomIconIsSelected() {
-        HomeSection.values().forEach { section ->
+        AlkaaTopDestination.values().forEach { section ->
             val title = context.getString(section.title)
 
             // Click on each item and validate the title

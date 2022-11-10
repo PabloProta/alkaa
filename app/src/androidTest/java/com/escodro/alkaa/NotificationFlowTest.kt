@@ -8,7 +8,7 @@ import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.test.platform.app.InstrumentationRegistry
-import com.escodro.alkaa.navigation.NavGraph
+import com.escodro.alkaa.navigation.AlkaaNavGraph
 import com.escodro.core.extension.getNotificationManager
 import com.escodro.designsystem.AlkaaTheme
 import com.escodro.domain.usecase.alarm.ScheduleAlarm
@@ -55,7 +55,7 @@ internal class NotificationFlowTest : KoinTest {
         }
         composeTestRule.setContent {
             AlkaaTheme {
-                NavGraph()
+                AlkaaNavGraph()
             }
         }
     }

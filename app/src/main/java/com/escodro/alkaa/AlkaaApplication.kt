@@ -25,7 +25,7 @@ import org.koin.core.logger.Level
 /**
  * Alkaa [Application] class.
  */
-class AlkaaApp : Application() {
+class AlkaaApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
@@ -34,7 +34,7 @@ class AlkaaApp : Application() {
 
         startKoin {
             androidLogger(Level.NONE)
-            androidContext(this@AlkaaApp)
+            androidContext(this@AlkaaApplication)
             modules(
                 appModule +
                     coreModule +

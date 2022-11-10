@@ -1,6 +1,6 @@
 package com.escodro.alkaa.presentation.home
 
-import com.escodro.alkaa.model.HomeSection
+import com.escodro.alkaa.model.AlkaaTopDestination
 
 internal data class HomeActions(
     val onTaskClick: (Long) -> Unit = {},
@@ -9,5 +9,5 @@ internal data class HomeActions(
     val onOpenSourceClick: () -> Unit = {},
     val onTaskSheetOpen: () -> Unit = {},
     val onCategorySheetOpen: (Long?) -> Unit = {},
-    val setCurrentSection: (HomeSection) -> Unit = {}
+    val setCurrentSection: (AlkaaTopDestination) -> Unit = {}
 )

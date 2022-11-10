@@ -11,7 +11,7 @@ import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performTextInput
 import androidx.test.platform.app.InstrumentationRegistry
 import com.escodro.alkaa.fake.FAKE_TASKS
-import com.escodro.alkaa.navigation.NavGraph
+import com.escodro.alkaa.navigation.AlkaaNavGraph
 import com.escodro.designsystem.AlkaaTheme
 import com.escodro.local.provider.DaoProvider
 import com.escodro.test.DisableAnimationsRule
@@ -50,7 +50,7 @@ internal class SearchFlowTest : KoinTest {
 
         composeTestRule.setContent {
             AlkaaTheme {
-                NavGraph()
+                AlkaaNavGraph()
             }
         }
 
